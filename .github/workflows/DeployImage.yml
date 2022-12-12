@@ -9,7 +9,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     permissions:
         contents: read
         packages: write
@@ -29,6 +29,10 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Get current date
+        id: date
+        run: echo "date=$(date +'%Y-%m-%d') >> $GITHUB_OUTPUT"
+
       - name: Extract Docker metadata
         id: meta
         uses: docker/metadata-action@v4.1.1
@@ -40,7 +44,7 @@ jobs:
             # default
             type=schedule,pattern=latest
             # test
-            type=pep440,pattern={{version}},value=${{ github.event.inputs.version }}
+            type=pep440,pattern={{version}},value=${{ steps.date.outputs.date }}
             
       - name: Build and push Docker image
         id: build-and-push
