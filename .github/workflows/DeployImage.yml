@@ -2,6 +2,9 @@ name: 📦 Deploy image to docker reg
 
 on:
   workflow_dispatch:
+  # Start At 10:00 on Monday.
+  schedule:
+  - cron: "0 10 * * 1"
 
 env:
   REGISTRY: ghcr.io
