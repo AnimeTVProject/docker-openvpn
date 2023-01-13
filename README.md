@@ -13,7 +13,7 @@ a corresponding [Digital Ocean Community Tutorial](https://www.digitalocean.com/
 #### Upstream Links
 
 * Orginal Project GitHub @ [kylemanna/docker-openvpn](https://github.com/kylemanna/docker-openvpn)
-* Orginal Project GitHub @ [AnimeTVProject/docker-openvpn](https://github.com/AnimeTVProject/docker-openvpn)
+* GitHub @ [AnimeTVProject/docker-openvpn](https://github.com/AnimeTVProject/docker-openvpn)
 
 ## Quick Start
 
