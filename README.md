@@ -1,21 +1,19 @@
 # OpenVPN for Docker
 
-[![Build Status](https://travis-ci.org/kylemanna/docker-openvpn.svg)](https://travis-ci.org/kylemanna/docker-openvpn)
-[![Docker Stars](https://img.shields.io/docker/stars/kylemanna/openvpn.svg)](https://hub.docker.com/r/kylemanna/openvpn/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/kylemanna/openvpn.svg)](https://hub.docker.com/r/kylemanna/openvpn/)
-[![ImageLayers](https://images.microbadger.com/badges/image/kylemanna/openvpn.svg)](https://microbadger.com/#/images/kylemanna/openvpn)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkylemanna%2Fdocker-openvpn.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkylemanna%2Fdocker-openvpn?ref=badge_shield)
+[![📦 Deploy image to docker reg](https://github.com/AnimeTVProject/docker-openvpn/actions/workflows/DeployImage.yml/badge.svg)](https://github.com/AnimeTVProject/docker-openvpn/actions/workflows/DeployImage.yml)
 
 
 OpenVPN server in a Docker container complete with an EasyRSA PKI CA.
 
-Extensively tested on [Digital Ocean $5/mo node](http://bit.ly/1C7cKr3) and has
-a corresponding [Digital Ocean Community Tutorial](http://bit.ly/1AGUZkq).
+This project is a fork of [kylemanna/docker-openvpn](https://github.com/kylemanna/docker-openvpn) for generating docker images with latest openvpn.
+
+Extensively tested on [Digital Ocean $4/mo node](http://bit.ly/3iDzD5o) and has
+a corresponding [Digital Ocean Community Tutorial](https://www.digitalocean.com/community/tutorials/how-to-run-openvpn-in-a-docker-container-on-ubuntu-14-04).
 
 #### Upstream Links
 
-* Docker Registry @ [kylemanna/openvpn](https://hub.docker.com/r/kylemanna/openvpn/)
-* GitHub @ [kylemanna/docker-openvpn](https://github.com/kylemanna/docker-openvpn)
+* Orginal Project GitHub @ [kylemanna/docker-openvpn](https://github.com/kylemanna/docker-openvpn)
+* Orginal Project GitHub @ [AnimeTVProject/docker-openvpn](https://github.com/AnimeTVProject/docker-openvpn)
 
 ## Quick Start
 
@@ -198,7 +196,7 @@ of a guarantee in the future.
 ## Originally Tested On
 
 * Docker hosts:
-  * server a [Digital Ocean](https://www.digitalocean.com/?refcode=d19f7fe88c94) Droplet with 512 MB RAM running Ubuntu 14.04
+  * server a [Digital Ocean](https://bit.ly/3CP0p1t) Droplet with 512 MB RAM running Ubuntu 14.04
 * Clients
   * Android App OpenVPN Connect 1.1.14 (built 56)
      * OpenVPN core 3.0 android armv7a thumb2 32-bit
@@ -207,4 +205,3 @@ of a guarantee in the future.
 
 
 ## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkylemanna%2Fdocker-openvpn.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkylemanna%2Fdocker-openvpn?ref=badge_large)
